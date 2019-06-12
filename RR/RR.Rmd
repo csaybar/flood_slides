@@ -1,0 +1,298 @@
+---
+title: "Reproducible Research and Open Science: Focus on Peru"
+subtitle: '`<img src="fig/fig01.png">`'
+author: "Antony Barja, Roy Yali and Cesar Aybar"
+date: '2019'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE}
+library(xaringanthemer)
+
+duo_accent(primary_color = "#006747", secondary_color = "#CFC493")
+```
+
+class: inverse, center, middle
+
+# Traditional Science - Antony Barja
+
+---
+
+# Hello World
+
+Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
+
+```{r eval=FALSE, tidy=FALSE}
+devtools::install_github("yihui/xaringan")
+```
+
+--
+
+You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
+
+- Create a new R Markdown document from the menu `File -> New File -> R Markdown -> From Template -> Ninja Presentation`;<sup>1</sup>
+
+--
+
+- Click the `Knit` button to compile it;
+
+--
+
+- or use the [RStudio Addin](https://rstudio.github.io/rstudioaddins/)<sup>2</sup> "Infinite Moon Reader" to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.
+
+.footnote[
+[1] 中文用户请看[这份教程](http://slides.yihui.name/xaringan/zh-CN.html)
+
+[2] See [#2](https://github.com/yihui/xaringan/issues/2) if you do not see the template or addin in RStudio.
+]
+
+---
+class: inverse, center, middle
+
+# Science in Peru - Roy Yali
+---
+
+# Hello World
+
+Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
+
+```{r eval=FALSE, tidy=FALSE}
+devtools::install_github("yihui/xaringan")
+```
+
+--
+
+You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
+
+- Create a new R Markdown document from the menu `File -> New File -> R Markdown -> From Template -> Ninja Presentation`;<sup>1</sup>
+
+--
+
+- Click the `Knit` button to compile it;
+
+--
+
+- or use the [RStudio Addin](https://rstudio.github.io/rstudioaddins/)<sup>2</sup> "Infinite Moon Reader" to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.
+
+.footnote[
+[1] 中文用户请看[这份教程](http://slides.yihui.name/xaringan/zh-CN.html)
+
+[2] See [#2](https://github.com/yihui/xaringan/issues/2) if you do not see the template or addin in RStudio.
+]
+
+
+---
+class: inverse, center, middle
+
+# Reproducible Research - Cesar Aybar
+---
+# What is reproducible research?
+
+`Reproducibility refers to the ability of a researcher to duplicate the results of a prior study using the same materials as were used by the original investigator.`
+--
+<center>
+<img src="fig/ff1.png">
+</center>
+
+---
+# What is reproducible research?
+
+`Reproducibility refers to the ability of a researcher to duplicate the results of a prior study using the same materials as were used by the original investigator.`
+
+<center>
+<img src="fig/ff2.png">
+</center>
+
+---
+# What is reproducible research?
+
+`Reproducibility refers to the ability of a researcher to duplicate the results of a prior study using the same materials as were used by the original investigator.`
+
+<center>
+<img src="fig/ff3.png">
+</center>
+
+---
+# What is reproducible research?
+
+`Reproducibility refers to the ability of a researcher to duplicate the results of a prior study using the same materials as were used by the original investigator.`
+
+<center>
+<img src="fig/ff4.png">
+</center>
+
+---
+# Current Earth Science Research
+
+<center>
+<img src="fig/expoRR1.png">
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+It is based on [Edzer Pebesma slides.](https://github.com/edzer/GEO/blob/master/GEO.pdf?fbclid=IwAR3r0CHdzkpSBjKBvw6ZoZaMzkgfEiq0mO6sUqCD9VV-OCj2hQl9wjKJlMY)
+
+---
+# Current Earth Science Research
+
+<center>
+<img src="fig/expoRR2.png">
+</center>
+<br>
+<br>
+<br>
+<br>
+It is based on [Edzer Pebesma slides.](https://github.com/edzer/GEO/blob/master/GEO.pdf?fbclid=IwAR3r0CHdzkpSBjKBvw6ZoZaMzkgfEiq0mO6sUqCD9VV-OCj2hQl9wjKJlMY)
+
+---
+# Current Earth Science Research
+
+<center>
+<img src="fig/expoRR4.png">
+</center>
+<br>
+<br>
+<br>
+It is based on [Edzer Pebesma slides.](https://github.com/edzer/GEO/blob/master/GEO.pdf?fbclid=IwAR3r0CHdzkpSBjKBvw6ZoZaMzkgfEiq0mO6sUqCD9VV-OCj2hQl9wjKJlMY)
+
+---
+# Reproducible Crisis - I
+
+![](https://coderefinery.github.io/reproducible-research/img/reproducibility_nature.png)
+
+
+---
+
+# Reproducible Crisis - II
+
+![](fig/fx.png)
+
+---
+
+# Causes of the crisis
+
+In a work published in 2015, [Glenn Begley and John Ioannidis](https://www.ahajournals.org/doi/10.1161/CIRCRESAHA.114.303819) offer **five bullets** as to summarize the present predicaments:
+
+- Generation of new data/publications at an unprecedented rate.
+- Compelling evidence that the majority of these discoveries will not stand the test of time.
+- **Publish or perish**.
+- This is a multifaceted, multistakeholder problem.
+- No single party is solely responsible, and no single solution will suffice.
+
+<center>
+<img src="fig/publicorperish.jpg" width=60%>
+</center>
+
+---
+# Open Science
+
+<center>
+<img src="http://assets.aims.fao.org.s3-eu-west-1.amazonaws.com/public/images/19%20blog-post-Open%20Innovation-Science.jpg" width=70%>
+</center>
+
+[Document here](http://publications.europa.eu/resource/cellar/3213b335-1cbc-11e6-ba9a-01aa75ed71a1.0001.02/DOC_2)
+
+---
+class: inverse, center, middle
+
+# Some tools for implement a **R**eproducible **R**esearch pipeline.
+---
+
+
+# Git
+
+<center>
+<img src="fig/git.jpg" width=70%>
+</center>
+
+[Git](https://git-scm.com/) is an Open Source Distributed Version Control System.
+
+---
+# Why git?
+
+<center>
+<img src="https://cmolinaord.github.io/images/tfg_meme_versiones.jpg" width=70%>
+</center>
+---
+# Docker
+
+It's an **open-source project** that automates the deployment of software applications inside containers by providing an additional layer of abstraction and automation of **OS-level virtualization on Linux**.
+
+- Workflows transparent and reproducible.
+- Lightweight.
+- Easy to use.
+
+<center>
+<img src="https://d33wubrfki0l68.cloudfront.net/a946d9e1cd118141435f988fa7e94b7bdb417c4a/48d0a/images/interest.webp">
+</center>
+---
+# How Docker works?
+
+<center>
+<img src="fig/D01.png" width=80%>
+</center>
+
+---
+# How Docker works?
+
+<center>
+<img src="fig/D02.png" width=80%>
+</center>
+
+---
+# How Docker works?
+
+<center>
+<img src="fig/D03.png" width=80%>
+</center>
+
+---
+class: inverse, center, middle
+
+# Ingeniería Geográfica - UNMSM
+---
+# EAP Ingeniería Geográfica - UNMSM
+
+Número de publicaciones científicas en revistas Q1 de los ultimos **29 AÑOS**.
+
+```{r eval=TRUE,echo=FALSE,message=FALSE,fig.height=5,fig.align='center'}
+library(tidyverse)
+
+years <- 1990:2019
+npublications <- rep(0,length(years))
+npublications[29] <- 1
+
+tibble(year = years,npub=npublications) %>% 
+  ggplot(aes(x=year,y=npub)) +
+  geom_line() + 
+  geom_point(data = tibble(year=2018,npub=1),size = 5, colour = "red",fill='red')+
+  theme_bw() + 
+  scale_y_continuous(limits = c(-5, 5))+
+  theme(text = element_text(size=20)) 
+```
+**SOLO UNA EN MAS DE 30 AÑOS** [Tarazona et.al., 2018](https://www.sciencedirect.com/science/article/pii/S1470160X18305326)
+
+---
+# EAP Ingeniería Geográfica - UNMSM
+
+Profesor Principal e Investigador en San Marcos. **¿Cuantos y quienes son?**
+<br>
+<br>
+<center>
+<img src="fig/unmsm_docencia.png" width=110%>
+</center>
+
+http://viceacademico.unmsm.edu.pe/?page_id=5593
