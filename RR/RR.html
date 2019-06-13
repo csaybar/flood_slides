@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
   <head>
     <title>Reproducible Research and Open Science: Focus on Peru</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta name="author" content="Antony Barja, Roy Yali and Cesar Aybar" />
     <meta name="date" content="2019-01-01" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
@@ -12,7 +12,7 @@
 class: center, middle, inverse, title-slide
 
 # Reproducible Research and Open Science: Focus on Peru
-## <code>&lt;img src=&quot;fig/fig01.png&quot;&gt;</code>
+## <code>&lt;img src="fig/fig01.png"&gt;</code>
 ### Antony Barja, Roy Yali and Cesar Aybar
 ### 2019
 
@@ -29,34 +29,71 @@ class: inverse, center, middle
 
 ---
 
-# Hello World
+# To make science in Peru 
 
-Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
+`It's dependet two factors` :  **Time** + **money**
 
+&lt;left&gt;
+&lt;img src="fig/time.gif" width="350" height="250"&gt;
+&lt;/left&gt;
 
-```r
-devtools::install_github("yihui/xaringan")
-```
+&lt;right&gt;
+&lt;img src="fig/money.gif "width="350" height="250"&gt;
+&lt;/right&gt;
 
---
+---
+# What's the problem at moment?
 
-You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
+`Probably there are factors different , but in general the UNESCO development a tool identifies How Does your country in invest R&amp;D?`
 
-- Create a new R Markdown document from the menu `File -&gt; New File -&gt; R Markdown -&gt; From Template -&gt; Ninja Presentation`;&lt;sup&gt;1&lt;/sup&gt;
+**what's R&amp;D (I + D)?**
 
---
+`Is a parameter of reference general about of invert in research and development,more information` [here!](http://www.unesco.org/new/es/media-services/single-view/news/how_much_do_countries_invest_in_rd_new_unesco_data_tool_re/)
 
-- Click the `Knit` button to compile it;
-
---
-
-- or use the [RStudio Addin](https://rstudio.github.io/rstudioaddins/)&lt;sup&gt;2&lt;/sup&gt; "Infinite Moon Reader" to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.
-
-.footnote[
-[1] 中文用户请看[这份教程](http://slides.yihui.name/xaringan/zh-CN.html)
-
-[2] See [#2](https://github.com/yihui/xaringan/issues/2) if you do not see the template or addin in RStudio.
+.pull-left[
+Global
+&lt;img src="RR_files/figure-html/unnamed-chunk-1-1.png" style="display: block; margin: auto;" /&gt;
 ]
+
+.pull-right[
+Local
+&lt;img src="RR_files/figure-html/unnamed-chunk-2-1.png" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+# It's important? 
+
+`Of course!, because innovation is one the objectives of  sustainable development`
+
+&lt;center&gt;
+&lt;img src="fig/ods.jpg"&gt;
+&lt;/center&gt;
+
+---
+# Focusing main Geographer Engineer research
+
+### 1. Territorial arrangement planning
+### 2. ZEE
+### 3. Enviromental and territorial management
+### 4. Geodesy and topography
+### 4. Etc.
+---
+# Plan B
+---
+# Changing paradigms in geographic research
+
+&lt;center&gt;
+&lt;img src="fig/geo1.png"&gt;
+&lt;/center&gt;
+
+---
+# Changing paradigms in geographic research
+&lt;center&gt;
+&lt;img src="fig/geo2.png"&gt;
+&lt;/center&gt;
+
+`Conclusión: Los datos son la materia prima del siglo XXI y especial los datos geolocalizados o geodatos(Beltrán López, 2016)`
 
 ---
 class: inverse, center, middle
@@ -270,7 +307,7 @@ class: inverse, center, middle
 
 Número de publicaciones científicas en revistas Q1 de los ultimos **29 AÑOS**.
 
-&lt;img src="RR_files/figure-html/unnamed-chunk-3-1.png" style="display: block; margin: auto;" /&gt;
+&lt;img src="RR_files/figure-html/unnamed-chunk-4-1.png" style="display: block; margin: auto;" /&gt;
 **SOLO UNA EN MAS DE 30 AÑOS** [Tarazona et.al., 2018](https://www.sciencedirect.com/science/article/pii/S1470160X18305326)
 
 ---
@@ -285,6 +322,7 @@ Profesor Principal e Investigador en San Marcos. **¿Cuantos y quienes son?**
 
 http://viceacademico.unmsm.edu.pe/?page_id=5593
     </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
@@ -294,16 +332,57 @@ http://viceacademico.unmsm.edu.pe/?page_id=5593
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
 });
-(function() {
-  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
   if (!r) return;
   s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
   d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
 })();</script>
 
 <script>
 (function() {
-  var i, text, code, codes = document.getElementsByTagName('code');
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
   for (i = 0; i < codes.length;) {
     code = codes[i];
     if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
@@ -317,14 +396,15 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
     i++;
   }
-})();
+};
+slideshow._releaseMath(document);
 </script>
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
 (function () {
   var script = document.createElement('script');
   script.type = 'text/javascript';
-  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
   if (location.protocol !== 'file:' && /^https?:/.test(script.src))
     script.src  = script.src.replace(/^https?:/, '');
   document.getElementsByTagName('head')[0].appendChild(script);
