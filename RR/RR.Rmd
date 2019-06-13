@@ -29,33 +29,96 @@ class: inverse, center, middle
 
 ---
 
-# Hello World
+# To make science in Peru 
 
-Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
+`It's dependet two factors` :  **Time** + **money**
 
-```{r eval=FALSE, tidy=FALSE}
-devtools::install_github("yihui/xaringan")
+<left>
+<img src="fig/time.gif" width="350" height="250">
+</left>
+
+<right>
+<img src="fig/money.gif "width="350" height="250">
+</right>
+
+---
+# What's the problem at moment?
+
+`Probably there are factors different , but in general the UNESCO development a tool identifies How Does your country in invest R&D?`
+
+**what's R&D (I + D)?**
+
+`Is a parameter of reference general about of invert in research and development,more information` [here!](http://www.unesco.org/new/es/media-services/single-view/news/how_much_do_countries_invest_in_rd_new_unesco_data_tool_re/)
+
+.pull-left[
+Global
+```{r eval=TRUE,echo=FALSE,message=FALSE,fig.height=5.5,fig.align='center'}
+library(tidyverse)
+library(viridis)
+
+data = read_csv2('data/data.csv')
+data$invert = round(data$invert/10,2)
+data %>%
+  mutate(country = fct_reorder(country, invert))%>%
+ggplot(aes(x = country,y = invert, fill = invert))+ 
+  geom_bar(stat = 'identity') + coord_flip()+
+  scale_fill_viridis_c('%PBI') +
+  theme_classic()+
+  geom_text(aes(label=paste(invert,'%')), vjust=1.2, color="black", size=3.5)
+```
+]
+
+.pull-right[
+Local
+```{r eval=TRUE,echo=FALSE,message=FALSE,fig.height=5.5,fig.align='center'}
+library(tidyverse)
+library(viridis)
+
+data = read_csv2('data/local.csv')
+data %>%
+  mutate(country = fct_reorder(country, invert))%>%
+ggplot(aes(x = country,y = invert, fill = invert))+ 
+  geom_bar(stat = 'identity') + coord_flip()+
+  scale_fill_viridis_d('%PBI') +
+  theme_classic()+
+  geom_text(aes(label=paste(invert,'%')), vjust=1.2, color="black", size=3.5)
 ```
 
---
-
-You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
-
-- Create a new R Markdown document from the menu `File -> New File -> R Markdown -> From Template -> Ninja Presentation`;<sup>1</sup>
-
---
-
-- Click the `Knit` button to compile it;
-
---
-
-- or use the [RStudio Addin](https://rstudio.github.io/rstudioaddins/)<sup>2</sup> "Infinite Moon Reader" to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.
-
-.footnote[
-[1] 中文用户请看[这份教程](http://slides.yihui.name/xaringan/zh-CN.html)
-
-[2] See [#2](https://github.com/yihui/xaringan/issues/2) if you do not see the template or addin in RStudio.
 ]
+
+---
+# It's important? 
+
+`Of course!, because innovation is one the objectives of  sustainable development`
+
+<center>
+<img src="fig/ods.jpg">
+</center>
+
+---
+# Focusing main Geographer Engineer research
+
+### 1. Territorial arrangement planning
+### 2. ZEE
+### 3. Enviromental and territorial management
+### 4. Geodesy and topography
+### 4. Etc.
+---
+# Plan B
+---
+# Changing paradigms in geographic research
+
+<center>
+<img src="fig/geo1.png">
+</center>
+
+---
+# Changing paradigms in geographic research
+<center>
+<img src="fig/geo2.png">
+</center>
+
+`Conclusión: Los datos son la materia prima del siglo XXI y especial los datos geolocalizados o geodatos(Beltrán López, 2016)`
 
 ---
 class: inverse, center, middle
